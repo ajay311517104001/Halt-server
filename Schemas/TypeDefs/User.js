@@ -11,12 +11,13 @@ GraphQLString,
 
 
 
- const UserType = new GraphQLObjectType({
+ const MenuType = new GraphQLObjectType({
     name: "User",
     fields: () => ({
       id: { type: GraphQLInt },
-      user_id: { type: GraphQLString },
-      password: {type :GraphQLString},
+      item: { type: GraphQLString },
+      type: {type :GraphQLString},
+      price: {type :GraphQLString},
     
      
     }),
@@ -24,5 +25,5 @@ GraphQLString,
 
 
 
-module.exports= {UserType};
+module.exports= {MenuType};
 

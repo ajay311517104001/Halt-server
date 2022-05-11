@@ -2,7 +2,7 @@
   "development": {
     "username": "ajay",
     "password": "3581",
-    "database": "minimato",
+    "database": "halt",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },

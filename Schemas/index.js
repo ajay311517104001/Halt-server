@@ -1,8 +1,9 @@
 // const {UserType} =require('./TypeDefs/User')
 // const {client} = require("../dbmanager")
 const graphql = require("graphql");
-const { GET_ALL_USERS} =require("./Queries/Users");
-const { CREATE_USER } = require('./Mutations/Users');
+const { GET_MENU} =require("./Queries/Menu");
+const { UPDATE_MENU } = require('./Mutations/Menu');
+// const { UPDATE } = require("sequelize/types/query-types");
 
 const {
   GraphQLObjectType,
@@ -19,14 +20,14 @@ GraphQLString,
 const RootQuery = new GraphQLObjectType({
 name:"RootQueryType",
 fields:{
-    getallUsers:GET_ALL_USERS
+    getMenu:GET_MENU
 }});
 
 const RootMutation =new GraphQLObjectType({
   name:"RootMutationType",
   
   fields:{
-    addNewUser: CREATE_USER,
+    updateMenu: UPDATE_MENU,
 
 
   }
