@@ -18,6 +18,9 @@
     "password": "8def2ca2d14bafee2ae92cb340f9640f282c9a6f09ef1ac0b03674a3f142ee4c",
     "database": "d7eu9j6jniidk0",
     "host": "ec2-34-236-94-53.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    }
   }
 }
