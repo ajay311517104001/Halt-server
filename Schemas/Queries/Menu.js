@@ -30,17 +30,13 @@ GraphQLString,
 
 
     try{
-       const menu_arr =[]
-      const result= await menu.findAll({
+
+      const menuResult= await menu.findAll({
         attributes: ['id', 'item','type', 'price']
       });
      
   
-  for(let i=0;i<result.length;i++){
-    menu_arr.push(result[i]) 
-  }
-  console.log( 'this is the result of the menu ',menu_arr)
-       return {menuList: menu_arr , error: null}
+       return {menuList: menuResult , error: null}
   
    
     }catch(err){

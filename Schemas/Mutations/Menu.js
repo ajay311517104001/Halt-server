@@ -64,7 +64,7 @@ const UPDATE_MENU = {
     }
 
 
-    return { user_id: args.userInput.user_id, token: token }
+   
 
 
   }
