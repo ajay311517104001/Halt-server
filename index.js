@@ -35,8 +35,8 @@ app.use('/graphql', graphqlHTTP({
 
 const port = process.env.PORT || 9000
 
-
-app.listen(port, '192.168.1.2' , async() => {
+//'192.168.1.2' 
+app.listen(port,async() => {
   await sequelize.sync({force:false})
   console.log(`serevr listening on port ${port}`)
 })
