@@ -40,8 +40,21 @@ const {
     })
   })
 
-  // ----------------------------- QUERIES ------------------------------------------
 
+ 
+  // ----------------------------- QUERIES- args ------------------------------------------
+
+  const exitFromFlow_input = new GraphQLInputObjectType({
+    name: "exitFromFlowInput",
+    fields: ({
+  
+      id: { type: GraphQLString },
+    
+  
+    })
+  })
+
+  // ----------------------------- QUERIES- without-args ------------------------------------------
 
   const returnOderItem = new GraphQLObjectType({
     name: "returnOderItem",
@@ -66,5 +79,5 @@ const {
     })
   })
 
-
-  module.exports= {incomingOrderReturn,incomingOrder_inputobj,incomingOderItem,returnOderItem,returnIncomingOrder};
+ 
+  module.exports= {incomingOrderReturn,incomingOrder_inputobj,incomingOderItem,returnOderItem,returnIncomingOrder,exitFromFlow_input};
